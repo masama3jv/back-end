@@ -1,18 +1,21 @@
 {
-  "name": "api",
+  "name": "ecommerce-api",
   "version": "1.0.0",
-  "description": "API Ecommerce Sessió 4",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed.js"
   },
   "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
     "dotenv": "^16.0.0",
-    "express": "^4.18.0",
-    "mongoose": "^8.0.0"
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.0"
+    "nodemon": "^2.0.0"
   }
 }
